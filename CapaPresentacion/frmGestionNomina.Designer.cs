@@ -33,7 +33,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtCod = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscarEmpleado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,24 +83,24 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Código del Empleado:";
             // 
-            // button1
+            // btnBuscarEmpleado
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(450, 77);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 59);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "BUSCAR EMPLEADO";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleado.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnBuscarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(450, 77);
+            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(171, 59);
+            this.btnBuscarEmpleado.TabIndex = 36;
+            this.btnBuscarEmpleado.Text = "BUSCAR EMPLEADO";
+            this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
             // 
             // frmGestionNomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscarEmpleado);
             this.Controls.Add(this.txtCod);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
@@ -121,6 +121,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscarEmpleado;
     }
 }
