@@ -56,6 +56,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtCodBuscar = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -82,7 +84,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(235, 93);
+            this.label3.Location = new System.Drawing.Point(28, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 25);
             this.label3.TabIndex = 2;
@@ -282,7 +284,7 @@
             // txtCod
             // 
             this.txtCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCod.Location = new System.Drawing.Point(371, 93);
+            this.txtCod.Location = new System.Drawing.Point(164, 101);
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(151, 30);
             this.txtCod.TabIndex = 8;
@@ -313,6 +315,7 @@
             this.btnRegistrar.TabIndex = 28;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btnBuscar
             // 
@@ -324,12 +327,33 @@
             this.btnBuscar.TabIndex = 29;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtCodBuscar
+            // 
+            this.txtCodBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodBuscar.Location = new System.Drawing.Point(583, 96);
+            this.txtCodBuscar.Name = "txtCodBuscar";
+            this.txtCodBuscar.Size = new System.Drawing.Size(151, 30);
+            this.txtCodBuscar.TabIndex = 31;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(402, 101);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(175, 25);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Buscar por código:";
             // 
             // frmRegistro_Busqueda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 545);
+            this.ClientSize = new System.Drawing.Size(783, 545);
+            this.Controls.Add(this.txtCodBuscar);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label20);
@@ -395,5 +419,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtCodBuscar;
+        private System.Windows.Forms.Label label15;
     }
 }
